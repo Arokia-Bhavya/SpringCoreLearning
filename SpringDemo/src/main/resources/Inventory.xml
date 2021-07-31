@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+  
+
+<bean name="product1" class="XmlConfig.Product">
+<property name="name" value="rice"></property>
+<property name="type" value="groceries"></property>
+<property name="price" value="100"></property>
+</bean>  
+<bean name="product2" class="XmlConfig.Product">
+<property name="name" value="pencil"></property>
+<property name="type" value="Stationery"></property>
+<property name="price" value="10"></property>
+</bean>
+<bean name="product3" class="XmlConfig.Product">
+<property name="name" value="Tomato"></property>
+<property name="type" value="vegetable"></property>
+<property name="price" value="20"></property>
+</bean>
+<bean name="product4" class="XmlConfig.Product">
+<property name="name" value="Apple"></property>
+<property name="type" value="Fruit"></property>
+<property name="price" value="30"></property>
+</bean>
+<bean name="Inventory" class="XmlConfig.Inventory">
+<property name="products">
+<list>
+<ref bean="product1"/>
+<ref bean="product2"/>
+<ref bean="product3"/>
+<ref bean="product4"/>
+</list></property>
+</bean>
+</beans>
