@@ -1,3 +1,4 @@
 # SpringCoreLearning
-***** IOC *****
-***** Dependency Injection *****
+****SpringCore****
+- IOC container
+- Dependency Injection
