@@ -1,4 +1,4 @@
-package AnnotationConfig;
+package JavaConfig;
 
 import java.util.ArrayList;
 import java.util.List;
