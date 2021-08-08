@@ -8,4 +8,5 @@
 - Qualifier
 - EL
 - AOP
+- DAO
 
