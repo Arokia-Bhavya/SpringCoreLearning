@@ -11,15 +11,21 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
 		http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang.xsd">
            
- <bean id="productFact"  class="Factory.ProductFactory" factory-method="getProduct">
-<constructor-arg type="java.lang.String" index="1" name="name" value="rice">
-</constructor-arg>
+<bean id="bean1" 
+      class="factory.ProductFactory" factory-method="createProduct">
+
+<constructor-arg name="name" value="tomato" />
+<constructor-arg name="productType" value="vegetable" />
+<constructor-arg name="price" value="50"/>
+</bean>
+
+<bean id="productFact"  class="factory.ProductFactory" >
 </bean> 
 
-<bean  id="productInstanceFact"  class="Factory.ProductFactory" factory-method="getInstanceProduct"
+<bean  id="bean2"  class="factory.ProductFactory" factory-method="createInstanceProduct"
         		 factory-bean="productFact">
-<constructor-arg type="java.lang.String" index="1">
-			<value>rice</value>
-		</constructor-arg>
+<constructor-arg name="name" value="rice" />
+<constructor-arg name="productType" value="groceries" />
+<constructor-arg name="price" value="100"/>			
 </bean>           
 </beans>           
