@@ -8,4 +8,7 @@
 - Qualifier
 - EL
 - AOP
+- DAO
+- spring transactions
+
 
